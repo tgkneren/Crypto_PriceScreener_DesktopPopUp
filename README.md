@@ -1,4 +1,4 @@
-# Crypto_PriceScreener_DesktopPopUp
+# Crypto_Screener_DesktopPopUp
 
 Crypto Price Tracker Using Tkinter and APIs
 
