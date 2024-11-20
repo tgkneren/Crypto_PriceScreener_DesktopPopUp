@@ -17,7 +17,7 @@ pairs = [
 ]
 
 root = tk.Tk()
-root.title("Fiyat Takibi")
+root.title("Price Screener")
 root.geometry("300x200+1000+500")
 root.resizable(False, False)
 
@@ -50,9 +50,9 @@ def update_prices():
                 price = float(data["pair"]["priceUsd"])
                 prices.append(f"{pair['name']}: {price:.10f} $")
             else:
-                prices.append(f"{pair['name']}: API Hatası")
+                prices.append(f"{pair['name']}: API Error")
         except Exception as e:
-            prices.append(f"{pair['name']}: Hata")
+            prices.append(f"{pair['name']}: Error")
 
     output_label.config(text="\n".join(prices))
 
