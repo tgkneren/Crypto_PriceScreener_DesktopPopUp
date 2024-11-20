@@ -62,4 +62,3 @@ def update_prices():
 update_prices()
 
 root.mainloop()
-r
